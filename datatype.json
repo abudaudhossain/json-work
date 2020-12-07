@@ -1,0 +1,15 @@
+{
+    "name": "Abu Daud",
+    "marks": 78,
+    "date": "2020-05-14",
+    "couress": ["DART", "KOTLIN","FLUTTER","IONIC"]
+    "address" : {
+        "city": "NDLS",
+        "area":"Anand Vihar",
+        "pin":343444,
+        "lon": 80.2323,
+        "lat": 45.5454
+    },
+    "marride": false,
+    "dod":null
+}
