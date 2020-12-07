@@ -9,6 +9,7 @@
     <h2>Accessing JSON Object value using dot(".") Notation</h2>
     <div id="myid"></div>
     <div id="myid2"></div>
+    <h5 id="myid3"></h5>
 
     <script>
       const myid = document.querySelector("#myid");
@@ -33,6 +34,11 @@
 
       myid2.innerHTML =
         "Name :" + Name + "<br/>Mobile :" + Mobile + "<br>City :" + City;
+
+        for(var i in obj){
+            // document.getElementById('myid3').innerHTML += i + '<br>';
+            document.getElementById('myid3').innerHTML += i+ " : "+ obj[i] + '<br>';
+        }
     </script>
   </body>
 </html>
