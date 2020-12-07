@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Accessing JSON Object value using dot(".") Notation</h2>
     <div id="myid"></div>
+    <div id="myid2"></div>
 
     <script>
-        const myid = document.querySelector('#myid');
+      const myid = document.querySelector("#myid");
+      const myid2 = document.querySelector("#myid2");
 
-        var obj={
-            "name":"Abu Daud",
-            "Mobile": 02355245,
-            "city": "Kurigram"
-        };
-        
-        let Name = obj.name;
-        let Mobile = obj.Mobile;
-        let City = obj.city;
+      var obj = {
+        name: "Abu Daud",
+        Mobile: 02355245,
+        city: "Kurigram",
+      };
 
-        myid.innerHTML = "Name :" + Name + "<br/>Mobile :" + Mobile + "<br>City :" + City;
+      let Name = obj.name;
+      let Mobile = obj.Mobile;
+      let City = obj.city;
 
+      myid.innerHTML =
+        "Name :" + Name + "<br/>Mobile :" + Mobile + "<br>City :" + City;
+
+      Name = obj["name"];
+      Mobile = obj["Mobile"];
+      City = obj["city"];
+
+      myid2.innerHTML =
+        "Name :" + Name + "<br/>Mobile :" + Mobile + "<br>City :" + City;
     </script>
-</body>
+  </body>
 </html>
