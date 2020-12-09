@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Array</title>
+</head>
+<body>
+    <h2>Accessing Nested Array Value using Loop</h2>
+    <div id="myid">
+
+    </div>
+
+    <script>
+        var obj, i, j, x="";
+
+        obj ={
+            "name": "Abu Daud",
+            "courses": [
+                {"catname": "Website Development", "cname":["PHP", "ASN.net","Ruby"]},
+                {"catname": "Mobile app Development", "cname":["Android", "flutter","Avugf"]},
+                {"catname": "Digital Marketing", "cname":["SEO", "SEM","SMO"]}
+                
+            ]
+
+            
+        };
+
+        for(i in obj.courses){
+            x += "<h2>" + obj.courses[i].catname + "</h2>";
+            for(j in obj.courses[i].cname){
+                x +=  obj.courses[i].cname[j] +"<br>";
+            };
+        };
+
+        document.getElementById("myid").innerHTML = x;
+
+    </script>
+</body>
+</html>
