@@ -1,15 +1,41 @@
 {
-    "name": "Abu Daud",
-    "marks": 78,
-    "date": "2020-05-14",
-    "couress": ["DART", "KOTLIN","FLUTTER","IONIC"]
-    "address" : {
-        "city": "NDLS",
-        "area":"Anand Vihar",
-        "pin":343444,
-        "lon": 80.2323,
-        "lat": 45.5454
-    },
-    "marride": false,
-    "dod":null
-}
+    "squadName" : "Super Hero Squad",
+    "homeTown" : "Metro City",
+    "formed" : 2016,
+    "secretBase" : "Super tower",
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Molecule Man",
+        "age" : 29,
+        "secretIdentity" : "Dan Jukes",
+        "powers" : [
+          "Radiation resistance",
+          "Turning tiny",
+          "Radiation blast"
+        ]
+      },
+      {
+        "name" : "Madame Uppercut",
+        "age" : 39,
+        "secretIdentity" : "Jane Wilson",
+        "powers" : [
+          "Million tonne punch",
+          "Damage resistance",
+          "Superhuman reflexes"
+        ]
+      },
+      {
+        "name" : "Eternal Flame",
+        "age" : 1000000,
+        "secretIdentity" : "Unknown",
+        "powers" : [
+          "Immortality",
+          "Heat Immunity",
+          "Inferno",
+          "Teleportation",
+          "Interdimensional travel"
+        ]
+      }
+    ]
+  }

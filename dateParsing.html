@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Convert string date into JavaScrip Date</h2>
+    <div id="myid">
+
+    </div>
+
+
+    <script>
+        var obj = '{"name": "Raj Singh", "dob" :"2020-08-02"}';
+        var data = JSON.parse(obj, function(key, value){
+            if(key == "dob"){
+                return new Date(value);
+            }else{
+                return value;
+            }
+    
+        });
+        //  data.dob = new Date(data.dob);
+        document.getElementById("myid").innerHTML ="Name : " + data.name + " DOB :" + data.dob;
+    </script>
+</body>
+</html>
